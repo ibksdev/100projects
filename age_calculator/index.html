@@ -20,14 +20,31 @@
         <div class="row box">
             <div class="col-md-6">
                <h1 class="text-center mb-5 fw-bold fs-1"  > Age Calculator</h1>
-         <form>
-             <input type="text" class="form-control form-control-lg mb-2" />
-
-         </form>
-
+                <form ACTION="">
+                    <label> Date of Birth </label>
+                    <input type="date" class="form-control form-control-lg mb-2" id="dob" placeholder="Date of Birth"/>
+                      <label> Age at the Date of </label>
+                        <input type="date" class="form-control form-control-lg mb-2" id="current_date" />
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-lg"> Calculate </button>
+                    </div>
+                 </form>
+                <div class="result mt-5 fs-2 fw-bold">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <p>
+                                Age:
+                                <span class="age-year badge bg-success"> 0  </span>
+                                <span class="age-month badge bg-danger"> 0  </span>
+                                <span class="age-day badge bg-primary"> 0  </span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
         </div>
     </div>
+
+<script src="script.js" > </script>
 </body>
 </html>
