@@ -15,7 +15,7 @@ function calculateAge (e) {
 		month: dobInput.getMonth() + 1,
 		year: dobInput.getFullYear(),
 	};
-	let currentDay = curDateInput.getDay();
+	let currentDay = curDateInput.getDate();
 	let currentMonth = curDateInput.getMonth() + 1;
 	let currentYear = curDateInput.getFullYear();
 
@@ -46,8 +46,8 @@ function calculateAge (e) {
 	{
 		birthMonth --;
 		let days = months[currentMonth - 2];
-		birthDay = days + currentMonth - birthDetails.date ;
-		if (birthMonth > 0)
+		birthDay = days + currentDay - birthDetails.date ;
+		if (birthMonth < 0)
 		{
 			birthMonth = 11;
 			birthYear --;
@@ -55,9 +55,9 @@ function calculateAge (e) {
 	}
 	displayResult(birthDay,birthMonth,birthYear);
 	function displayResult (bDate,bMonth,bYear) {
-		document.querySelector(".age-year").textContent = bYear;
-		document.querySelector(".age-month").textContent = bMonth;
-		document.querySelector(".age-day").textContent = bDate;
+		document.querySelector(".age-year").textContent = bYear + " Years";
+		document.querySelector(".age-month").textContent = bMonth + " Months";
+		document.querySelector(".age-day").textContent = bDate + " Days";
 
 	}
 
