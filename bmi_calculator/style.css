@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.root{
+    font-size: 12px;
+}
+.container{
+    max-width: 1000px;
+    margin: 7rem auto;
+    padding: 0px;
+}
+
+section{
+    height: 150vh;
+}
+
+.box{
+    padding: 3rem;
+    box-shadow: 0px 5px 10px 10px #F2F2F2;
+
+
+
+}
+h2{
+    text-align: center;
+}
+
+form{
+    padding: 1rem;
+    font-size: 1.2rem;
+
+}
+form > * {
+    padding-bottom: 1rem;
+}
+
+
+form input{
+    border: 2px  solid black;
+}
+
+form input,
+.btn{
+    width: 100%;
+    padding: .8rem;
+    font-size: 1rem;
+}
+.btn{
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+}

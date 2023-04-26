@@ -3,6 +3,14 @@ const current_date = document.querySelector("#current_date");
 const btn = document.querySelector(".btn");
 const months=[31,28,31,30,31,30,31,31,30,31,30,31];
 
+window.onload = function ()
+{
+	let today = new Date ();
+	let dateString = today.toISOString().slice(0,10);
+	document.getElementById("dob").value = dateString;
+	document.getElementById("current_date").value = dateString;
+}
+
 btn.addEventListener("click",calculateAge);
 
 function calculateAge (e) {
